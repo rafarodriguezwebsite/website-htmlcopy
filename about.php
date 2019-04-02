@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 
 <html class="page">
-
+<?php include('Meta&Head.html'); ?>
 <title>About | Rafael</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-<head>
-    <link rel="stylesheet" type="text/css" href="css/body.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="icon" href="src\icons\icon.png">
-</head>
 
 <body>
     <!-- HEADER -->
