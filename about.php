@@ -30,7 +30,7 @@
                 padding: 0px 25px 5px 0px;
                 float: left;
                 ">
-            Rafa Rodriguez is a professional guitarist/multi-instrumentalist from the San Francisco Bay Area in California. He began his musical journey at age 10 with the alto saxophone, playing in numerous jazz ensembles during his time in school. But he craved to further his musical ambitions, becoming self-taught in bassoon, drums, voice, bass, and most notably, guitar. Now using the guitar as his main storytelling tool, he records and performs all around California, while acting as guitarist and producer for the progressive-funk band <i>Half Mad</i>.
+            <?php include('BioPt1'); ?>
         </p1>
 
         <div style="padding: 25px"></div>
