@@ -4,8 +4,6 @@
 <?php include('Meta&Head.html'); ?>
 <title>Contact | Rafael</title>
 
-<title>Contact | Rafael</title>
-
 <body onload="reasonActive(false)">
     <!-- HEADER -->
     <div class="header" style="

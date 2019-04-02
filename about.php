@@ -42,7 +42,7 @@
                 padding: 0px 0px 5px 25px;
                 float: right;
                 ">
-            Influenced early on by the likes of modern prog metal and math rock artists, Rafael brings an interesting color to the contemporary music scene, combining the sounds, colors, and textures of progressive music with modern pop/soul/hip-hop stylings. His musical endeavours range from regularly produced Instagram content to recording and producing dozens of live performances with <i>Half Mad</i> and other local groups.
+            <?php include('BioPt2'); ?>
         </p1>
     </div>
 
