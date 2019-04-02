@@ -1,3 +1,4 @@
-RewriteEngine on
-RewriteRule ^(.*).html$ http://your-domain.tld/$1 [R=301,L]
-RewriteRule ^(.*).php$  http://your-domain.tld/$1 [R=301,L]
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
