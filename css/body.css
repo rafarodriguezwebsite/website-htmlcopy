@@ -1,0 +1,94 @@
+body, html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Monaco, monospace;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Scroll bar appears on all pages except home */
+html {margin-right: calc(100% - 100vw);} 
+body {margin-right: calc(100vw - 100%);}
+.page {overflow-y: scroll; overflow-x: hidden;}
+
+h2 {
+    color: black;
+}
+
+@media screen and (min-width: 400px) {
+    h2 {font-size: 80px;}
+}
+@media screen and (max-width: 399px) {
+    h2 {font-size: 60px;}
+}
+
+.mediaTile {
+    background-color: hsl(0, 14%, 85%);
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    text-align: right;
+    right: 10px;
+    bottom: 0px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+p1 {
+    padding: 20px 0px;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+form, button, input, select, textarea {
+    padding: 0px 10px;
+    font-family: Monaco, monospace;
+    line-height: 23px;
+}
+
+.sendMessage textarea {
+    max-width: calc(100% - 30px);
+    width: 325px;
+}
+
+.socialMedia {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 920px;
+    width: 100%;
+    text-align: center;
+}
+
+.socialMedia img {
+    padding: 10px 10px 0px 0px;
+    height: auto;
+    width: 19%;
+}
+
+.socialMedia img:hover {
+    background-color: lightgray;
+}

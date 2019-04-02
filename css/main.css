@@ -1,0 +1,29 @@
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    width: 100%;
+    
+    flex: 1;
+    padding: 0px;
+}
+
+h1 {
+    color: rgb(117, 108, 0);
+    text-align: center;
+    font-size: 50px;
+}
+
+.main p1 {
+    color: rgb(95, 95, 95);
+    /* text-align: left; */
+    font-size: 20px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main a:link, .main a:visited, .main a:hover, .main a:active {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
