@@ -20,26 +20,9 @@
         background-image: url('src/newsHeader.jpg');
         background-position: 40% 20%;
     ">
-        <table border="0" class="NavigationBar">
-            <tr>
-                <th colspan="1" class="headerNavigationBar">
-                    <a href="home.html">Home</a>
-                </th>
-                <th colspan="1" class="headerNavigationBar">
-                    <a href="media.html">Media</a>
-                </th>
-                <th colspan="1" class="headerNavigationBar">
-                    <a href="news.html">News</a>
-                </th>
-                <th colspan="1" class="headerNavigationBar">
-                    <a href="about.html">About</a>
-                </th>
-                <th colspan="1" class="headerNavigationBar">
-                    <a href="contact.html">Contact</a>
-                </th>
-    
-            </tr>
-        </table>
+        
+        <?php include('NavigationBar.html'); ?>
+        
         <h3><span style="background-color: white;">
                 News
         </span></h3>
