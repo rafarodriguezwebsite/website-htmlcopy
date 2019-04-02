@@ -10,9 +10,14 @@ footer a:active {
     color: white;
 }
 
+footer h3 {
+    padding: 0px 10px 0px 0px;
+}
+
 footer h4 {
     font-size: 10px;
     color: gray;
+    padding: 0px 10px 0px 0px;
 }
 
 footer img {
