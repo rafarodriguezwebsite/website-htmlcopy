@@ -2,7 +2,6 @@
 
 <html class="page">
 
-<title>Contact | Rafael</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -14,6 +13,8 @@
     <link rel="icon" href="src\icons\icon.png">
 </head>
 
+<title>Contact | Rafael</title>
+
 <body onload="reasonActive(false)">
     <!-- HEADER -->
     <div class="header" style="
@@ -22,7 +23,7 @@
     ">
 
         <?php include('NavigationBar.html'); ?>
-        
+
         <h3><span style="background-color: white;">
             Contact
         </span></h3>
@@ -59,18 +60,7 @@
     <div style="padding: 40px"></div>
     
     <!-- FOOTER -->
-    <footer>
-        <h3> Rafael Rodriguez
-            <a href="https://www.youtube.com"><img src="src\icons\youtube-w.png" alt="YouTube"></a>
-            <a href="https://rafaelrodriguez.bandcamp.com/releases"><img src="src\icons\bandcamp-w.png" alt="Bandcamp"></a>
-            <a href="https://www.instagram.com/thatvegankidrar/?hl=en"><img src="src\icons\instagram-w.png" alt="Instagram"></a>
-            <a href="https://soundcloud.com/rafaelrodriguezmusic"><img src="src\icons\soundcloud-w.png" alt="SoundCloud"></a>
-        </h3>
-        <h3 style="font-size: 14px;">Website by Ethan Sifferman | <a href="mailto:ethan.sifferman@gmail.com">
-            ethan.sifferman@gmail.com</a>
-        </h3>
-        <h4>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from www.flaticon.com</h4>
-    </footer>
+    <?php include('Footer.html'); ?>
     
 </body>
 
