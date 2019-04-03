@@ -24,7 +24,9 @@
             Upcoming Events
         </h1>
         <p1>
-            Coming soon... ;)
+            
+            <?php include('calendar.php'); ?>
+
         </p1>
 
     </div>
