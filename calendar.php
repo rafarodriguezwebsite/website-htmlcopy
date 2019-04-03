@@ -79,19 +79,19 @@ if (empty($events)) {
         }
 
         echo "
-<table border="0" class="Event">
+<table border='0' class='Event'>
     <tr>
-        <th colspan="1" class="Date">
-            <a href="home.php">Home</a>
+        <th colspan='1' class='Date'>
+            <a href='home.php'>Home</a>
         </th>
-        <th colspan="1" class="Picture">
-            <a href="home.php">Home</a>
+        <th colspan='1' class='Picture'>
+            <a href='home.php'>Home</a>
         </th>
-        <th colspan="1" class="Summary">
-            <a href="home.php">Home</a>
+        <th colspan='1' class='Summary'>
+            <a href='home.php'>Home</a>
         </th>
-        <th colspan="1" class="Location">
-            <a href="home.php">Home</a>
+        <th colspan='1' class='Location'>
+            <a href='home.php'>Home</a>
         </th>
     </tr>
 </table>
