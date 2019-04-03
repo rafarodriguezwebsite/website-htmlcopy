@@ -96,3 +96,4 @@ if (empty($events)) {
         echo "</br>";
     }
 }
+?>
