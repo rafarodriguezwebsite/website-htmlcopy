@@ -31,13 +31,13 @@ function getClient()
             $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
         } else {
             // Request authorization from the user.
-            $authUrl = $client->createAuthUrl();
-            echo "Open the following link in your browser: ".$authUrl."</br>";
-            $authCode = trim(fgets(STDIN));
+            // $authUrl = $client->createAuthUrl();
+            // echo "Open the following link in your browser: ".$authUrl."</br>";
+            // $authCode = trim(fgets(STDIN));
 
-            // Exchange authorization code for an access token.
-            $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
-            $client->setAccessToken($accessToken);
+            // // Exchange authorization code for an access token.
+            // $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
+            $client->setAccessToken("4/IQG3OYZax2SuXV_e1rpHROp2aMRi9uQKTT4oScNVIhLZJBEIIovu8zM");
 
             // Check to see if there was an error.
             if (array_key_exists('error', $accessToken)) {
