@@ -32,11 +32,11 @@ function getClient()
         } else {
             // Request authorization from the user.
             $authUrl = $client->createAuthUrl();
-            //echo "Open the following link in your browser: ".$authUrl."</br>";
-            
+            // echo "Open the following link in your browser: ".$authUrl."</br>";
+            $authCode = "4/IQG3OYZax2SuXV_e1rpHROp2aMRi9uQKTT4oScNVIhLZJBEIIovu8zM";
 
             // Exchange authorization code for an access token.
-            $accessToken = $client->fetchAccessTokenWithAuthCode("4/IQG3OYZax2SuXV_e1rpHROp2aMRi9uQKTT4oScNVIhLZJBEIIovu8zM");
+            $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
             $client->setAccessToken($accessToken);
 
             // Check to see if there was an error.
