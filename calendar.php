@@ -1,18 +1,12 @@
 <?php
-
 require __DIR__ . '/vendor/autoload.php';
-
-/** if (php_sapi_name() != 'cli') {
-*    throw new Exception('This application must be run on the command line.');
-*}
-*/
 
 /**
  * Returns an authorized API client.
  * @return Google_Client the authorized client object
  */
-function getClient() {
-	
+function getClient()
+{
     $client = new Google_Client();
     $client->setApplicationName('Google Calendar API PHP Quickstart');
     $client->setScopes(Google_Service_Calendar::CALENDAR_READONLY);
@@ -30,19 +24,16 @@ function getClient() {
         $client->setAccessToken($accessToken);
     }
 
-    // If there is no previous token or it's expired.kkkkkk
+    // If there is no previous token or it's expired.
     if ($client->isAccessTokenExpired()) {
-        
         // Refresh the token if possible, else fetch a new one.
         if ($client->getRefreshToken()) {
             $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
         } else {
             // Request authorization from the user.
             $authUrl = $client->createAuthUrl();
-            // echo "Open the following link in your browser: <a href='" . $authUrl . "'>Get Verification Code</a></br>";
-            // echo "Enter verification code:</br>"
-            // $authCode = trim(fgets(STDIN));
-            $authCode = "4/IQGuXCBAjlrZNIFIZQSP_qhS0mRdw7sx7HmIarI-su-elNb4dIt1J0c";
+            echo "Open the following link in your browser: ".$authUrl."</br>";
+            $authCode = trim(fgets(STDIN));
 
             // Exchange authorization code for an access token.
             $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
@@ -57,11 +48,9 @@ function getClient() {
         if (!file_exists(dirname($tokenPath))) {
             mkdir(dirname($tokenPath), 0700, true);
         }
-        //file_put_contents($tokenPath, json_encode($client->getAccessToken()));
+        file_put_contents($tokenPath, json_encode($client->getAccessToken()));
     }
     return $client;
-    
-    //echo "Error: tokenExpired</br>Contact Ethan at ethan.sifferman@gmail.com";
 }
 
 
@@ -81,21 +70,14 @@ $results = $service->events->listEvents($calendarId, $optParams);
 $events = $results->getItems();
 
 if (empty($events)) {
-    echo "No upcoming events found.<br>";
+    echo "No upcoming events found.</br>";
 } else {
-    echo "Upcoming events:<br>";
+    echo "Upcoming events:</br>";
     foreach ($events as $event) {
         $start = $event->start->dateTime;
         if (empty($start)) {
             $start = $event->start->date;
         }
-        try {echo "Summary: " . $event->getSummary()."</br>";} catch (Exception $e) {}
-        try {echo "Description: " . $event->getDescription()."</br>";} catch (Exception $e) {}
-        try {echo "Location: " . $event->getLocation()."</br>";} catch (Exception $e) {}
-        try {echo "<img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'></br>";} catch (Exception $e) {}
-        try {echo "Date: " . $start."</br>";} catch (Exception $e) {}
-        echo "</br>";
+        echo $event->getSummary()." ".$start;
     }
 }
-
-?>
