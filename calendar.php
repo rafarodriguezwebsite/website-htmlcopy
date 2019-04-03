@@ -78,7 +78,8 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            " . $event->start->date . "</br></br>" . $event->start->dateTime . "
+            Time: " . $event->start->date . "</br></br>
+            DateTime: " . $event->start->dateTime . "
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
