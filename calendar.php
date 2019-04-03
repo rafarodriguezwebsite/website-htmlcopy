@@ -78,17 +78,17 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            Date: " . $event->start->date . "</br>" . $event->start->dateTime . "
+            " . $event->start->date . "</br></br>" . $event->start->dateTime . "
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
-            Summary: " . $event->getSummary() . "</br>
-            Description: " . $event->getDescription() . "
+            " . $event->getSummary() . "</br>
+            " . $event->getDescription() . "
         </th>
         <th colspan='1' class='Location'>
-            Location: " . $event->getLocation() . "
+            " . $event->getLocation() . "
         </th>
     </tr>
 </table>
