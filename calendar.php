@@ -82,26 +82,27 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            <a href='home.php'>Home</a>
+            Date: " . $start . "
         </th>
         <th colspan='1' class='Picture'>
-            <a href='home.php'>Home</a>
+            <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
-            <a href='home.php'>Home</a>
+            Summary: " . $event->getSummary() . "</br>
+            Description: " . $event->getDescription() . "
         </th>
         <th colspan='1' class='Location'>
-            <a href='home.php'>Home</a>
+            Location: " . $event->getLocation() . "
         </th>
     </tr>
 </table>
     ";
 
-        echo "Summary: " . $event->getSummary()."</br>";
-        echo "Description: " . $event->getDescription()."</br>";
-        echo "Location: " . $event->getLocation()."</br>";
-        echo "<img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'></br>";
-        echo "Date: " . $start."</br>";
+        // echo "Summary: " . $event->getSummary()."</br>";
+        // echo "Description: " . $event->getDescription()."</br>";
+        // echo "Location: " . $event->getLocation()."</br>";
+        // echo "<img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'></br>";
+        // echo "Date: " . $start."</br>";
         echo "</br>";
     }
 }
