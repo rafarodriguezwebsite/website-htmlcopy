@@ -93,7 +93,6 @@ function getClient() {
 
 
 // Get the API client and construct the service object.
-echo "hi";
 $client = getClient();
 $service = new Google_Service_Calendar($client);
 
