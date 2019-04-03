@@ -77,6 +77,26 @@ if (empty($events)) {
         if (empty($start)) {
             $start = $event->start->date;
         }
+
+        echo "
+<table border="0" class="Event">
+    <tr>
+        <th colspan="1" class="Date">
+            <a href="home.php">Home</a>
+        </th>
+        <th colspan="1" class="Picture">
+            <a href="home.php">Home</a>
+        </th>
+        <th colspan="1" class="Summary">
+            <a href="home.php">Home</a>
+        </th>
+        <th colspan="1" class="Location">
+            <a href="home.php">Home</a>
+        </th>
+    </tr>
+</table>
+    ";
+
         echo "Summary: " . $event->getSummary()."</br>";
         echo "Description: " . $event->getDescription()."</br>";
         echo "Location: " . $event->getLocation()."</br>";
