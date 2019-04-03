@@ -1,0 +1,10 @@
+# ---- Forward unfound pages to Home
+
+ErrorDocument 404 home.php
+
+# ---- Remove .php extensions
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
