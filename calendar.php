@@ -73,16 +73,12 @@ if (empty($events)) {
     echo "No upcoming events found.</br>";
 } else {
     foreach ($events as $event) {
-        $start = $event->start->dateTime;
-        if (empty($start)) {
-            $start = $event->start->date;
-        }
 
         echo "
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            Date: " . $start . "
+            Date: " . $event->start->date . "</br>" . $event->start->dateTime . "
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
