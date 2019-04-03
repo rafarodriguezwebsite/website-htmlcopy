@@ -24,8 +24,8 @@
             Upcoming Events
         </h1>
         <p1>
-            
-        <?php
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<?php
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -64,7 +64,6 @@ function getClient() {
         if ($client->getRefreshToken()) {
             $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
         } else {
-            echo "hi";
             // Request authorization from the user.
             $authUrl = $client->createAuthUrl();
             // echo "Open the following link in your browser: <a href='" . $authUrl . "'>Get Verification Code</a></br>";
@@ -85,7 +84,7 @@ function getClient() {
         if (!file_exists(dirname($tokenPath))) {
             mkdir(dirname($tokenPath), 0700, true);
         }
-        //file_put_contents($tokenPath, json_encode($client->getAccessToken()));
+        file_put_contents($tokenPath, json_encode($client->getAccessToken()));
     }
     return $client;
     
@@ -94,6 +93,7 @@ function getClient() {
 
 
 // Get the API client and construct the service object.
+echo "hi";
 $client = getClient();
 $service = new Google_Service_Calendar($client);
 
@@ -127,7 +127,7 @@ if (empty($events)) {
 }
 
 ?>
-
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         </p1>
 
     </div>
