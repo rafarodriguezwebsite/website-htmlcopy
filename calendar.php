@@ -78,6 +78,11 @@ if (empty($events)) {
         if (empty($start)) {
             $start = $event->start->date;
         }
-        echo $event->getSummary()." ".$start;
+        try {echo "Summary: " . $event->getSummary()."</br>";} catch (Exception $e) {}
+        try {echo "Description: " . $event->getDescription()."</br>";} catch (Exception $e) {}
+        try {echo "Location: " . $event->getLocation()."</br>";} catch (Exception $e) {}
+        try {echo "<img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'></br>";} catch (Exception $e) {}
+        try {echo "Date: " . $start."</br>";} catch (Exception $e) {}
+        echo "</br>";
     }
 }
