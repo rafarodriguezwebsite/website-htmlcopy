@@ -5,6 +5,6 @@
 <title>Home | Rafael</title>
 <meta charset="UTF-8">
 
-<meta http-equiv="refresh" content="0; URL='home'" />
+<meta http-equiv="refresh" content="0; URL='home.php'" />
 
 </html>
