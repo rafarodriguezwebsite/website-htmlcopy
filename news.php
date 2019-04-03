@@ -64,6 +64,7 @@ function getClient() {
         if ($client->getRefreshToken()) {
             $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
         } else {
+            echo "hi";
             // Request authorization from the user.
             $authUrl = $client->createAuthUrl();
             // echo "Open the following link in your browser: <a href='" . $authUrl . "'>Get Verification Code</a></br>";
