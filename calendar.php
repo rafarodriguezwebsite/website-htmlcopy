@@ -72,7 +72,6 @@ $events = $results->getItems();
 if (empty($events)) {
     echo "No upcoming events found.</br>";
 } else {
-    echo "Upcoming events:</br>";
     foreach ($events as $event) {
         $start = $event->start->dateTime;
         if (empty($start)) {
