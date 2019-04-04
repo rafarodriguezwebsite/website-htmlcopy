@@ -112,7 +112,7 @@ if (empty($events)) {
             " . $year . "</br></br>
             " . $time . "
         </th>
-        <th colspan='1' class='Picture' .$picture.">
+        <th colspan='1' class='Picture'" . $picture . ">
         </th>
         <th colspan='1' class='Summary'>
             <h5 class='summary'>" . $event->getSummary() . "</h5></br>
