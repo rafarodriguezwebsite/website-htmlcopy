@@ -33,6 +33,7 @@ h1 {
 }
 
 .main .Event .Date {
+    vertical-align: text-top;
     text-align: center;
     color: white;
     background-color: black;
