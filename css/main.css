@@ -103,7 +103,7 @@ h1 {
     }
     
     .main .Event .Picture {
-        min-width: 200px;
+        min-width: 150px;
     }
     
     .main .Event .Summary {
@@ -120,5 +120,32 @@ h1 {
     }
 }
 @media screen and (max-width: 399px) {
-    h2 {font-size: 60px;}
+    .main .Event .Date {
+        min-width: 40px;
+    }
+    
+    .main .Event .Date .day {
+        font-size: 30px;
+    }
+    
+    .main .Event .Date .month {
+        font-size: 10px;
+    }
+    
+    .main .Event .Picture {
+        min-width: 100px;
+    }
+    
+    .main .Event .Summary {
+        padding: 5px;
+    }
+    
+    .main .Event .Summary .summary {
+        font-size: 15px;
+    }
+    
+    .main .Event .Location {
+        font-size: 8px;
+        min-width: 40px;
+    }
 }
