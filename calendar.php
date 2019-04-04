@@ -90,7 +90,7 @@ if (empty($events)) {
 
         if (empty($event->start->dateTime)) {
             $day = intval(substr($event->start->date,8,2));
-            $month = $_MONTH[ intval(substr($event->start->date,5,2)) ];
+            $month = $_MONTH[ intval(substr($event->start->date,5,2)) - 1];
             $year = substr($event->start->date,0,4);
             $time = "";
         }
