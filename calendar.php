@@ -111,8 +111,7 @@ if (empty($events)) {
             " . $year . "</br></br>
             " . $time . "
         </th>
-        <th colspan='1' class='Picture'>
-            <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
+        <th colspan='1' class='Picture' background='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
             <h5 class='summary'>" . $event->getSummary() . "</h5></br>
