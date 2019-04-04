@@ -37,7 +37,6 @@ h1 {
     text-align: center;
     color: white;
     background-color: rgb(10, 10, 10);
-    width: 100px;
 }
 
 .main .Event .Date .day {
@@ -90,12 +89,13 @@ h1 {
     text-align: center;
     color: white;
     background-color: rgb(10, 10, 10);
-    width: 100px;
 }
 
 @media screen and (min-width: 600px) {
     .main .Event .Date {
-        min-width: 60px;
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px;
     }
     
     .main .Event .Date .day {
@@ -124,12 +124,16 @@ h1 {
     
     .main .Event .Location {
         font-size: 12px;
-        min-width: 60px;
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px;
     }
 }
 @media screen and (max-width: 599px) {
     .main .Event .Date {
-        min-width: 40px;
+        min-width: 50px;
+        max-width: 50px;
+        width: 50px;
     }
     
     .main .Event .Date .day {
@@ -158,6 +162,8 @@ h1 {
 
     .main .Event .Location {
         font-size: 10px;
-        min-width: 40px;
+        min-width: 50px;
+        max-width: 50px;
+        width: 50px;
     }
 }
