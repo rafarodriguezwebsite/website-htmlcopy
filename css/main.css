@@ -57,7 +57,7 @@ h1 {
 
 .main .Event .Picture {
     background-size: cover;
-    
+    background-position: center;
     height: 200px;
     width: 200px;
     background-color: rgb(10, 10, 10);
