@@ -30,6 +30,7 @@ h1 {
 
 .main .Event {
     height: 200px;
+    max-height: 200px;
 }
 
 .main .Event .Date {
@@ -89,7 +90,7 @@ h1 {
     width: 100px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
     .main .Event .Date {
         min-width: 60px;
     }
@@ -119,7 +120,7 @@ h1 {
         min-width: 60px;
     }
 }
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 599px) {
     .main .Event .Date {
         min-width: 40px;
     }
