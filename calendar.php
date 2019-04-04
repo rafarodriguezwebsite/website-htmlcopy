@@ -106,9 +106,9 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            <h6>" . $day . "</h6></br></br>
-            <h7>" . $month . "</h7></br></br>
-            " . $year . "</br></br></br>
+            <h6>" . $day . "</h6></br>
+            <h7>" . $month . "</h7></br>
+            " . $year . "</br></br>
             " . $time . "
         </th>
         <th colspan='1' class='Picture'>
