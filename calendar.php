@@ -72,14 +72,44 @@ $events = $results->getItems();
 if (empty($events)) {
     echo "No upcoming events found.</br>";
 } else {
+    $_MONTH = array(
+         0 => "January",
+         1 => "Febuary",
+         2 => "March",
+         3 => "April",
+         4 => "May",
+         5 => "June",
+         6 => "July",
+         7 => "August",
+         8 => "September",
+         9 => "October",
+        10 => "November",
+        11 => "December",
+    );
     foreach ($events as $event) {
+
+        if (empty($event->start->dateTime)) {
+            $day = intval(substr($event->start->date,8,2));
+            $month = $_MONTH[ intval(substr($event->start->date,5,2)) ];
+            $year = substr($event->start->date,0,4);
+        }
+        else {
+            $day = intval(substr($event->start->dateTime,8,2));
+            $month = $_MONTH[ intval(substr($event->start->dateTime,5,2)) ];
+            $year = substr($event->start->dateTime,0,4);
+            $time = "";
+            $time = intval(substr($event->start->dateTime,11,2)) . substr($event->start->dateTime,13,3);
+        }
+
 
         echo "
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            Time: " . $event->start->date . "</br></br>
-            DateTime: " . $event->start->dateTime . "
+            Day: " . $day . "</br>
+            Month: " . $month . "</br>
+            Year: " . $year . "</br>
+            Time: " . $time . "</br>
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
@@ -94,12 +124,6 @@ if (empty($events)) {
     </tr>
 </table>
     ";
-
-        // echo "Summary: " . $event->getSummary()."</br>";
-        // echo "Description: " . $event->getDescription()."</br>";
-        // echo "Location: " . $event->getLocation()."</br>";
-        // echo "<img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'></br>";
-        // echo "Date: " . $start."</br>";
         echo "</br>";
     }
 }
