@@ -8,7 +8,7 @@ require __DIR__ . '/vendor/autoload.php';
 function getClient()
 {
     $client = new Google_Client();
-    $client->setApplicationName('Google Calendar API PHP Quickstart');
+    $client->setApplicationName('Google Calendar for rafarodriguezmusic');
     $client->setScopes(Google_Service_Calendar::CALENDAR_READONLY);
     $client->setAuthConfig('credentials.json');
     $client->setAccessType('offline');
@@ -98,7 +98,7 @@ if (empty($events)) {
             $day = intval(substr($event->start->dateTime,8,2));
             $month = $_MONTH[ intval(substr($event->start->dateTime,5,2)) - 1];
             $year = substr($event->start->dateTime,0,4);
-            $time = intval(substr($event->start->dateTime,11,2)) . substr($event->start->dateTime,13,3);
+            $time = ( intval(substr($event->start->dateTime,11,2)) % 12 ) . substr($event->start->dateTime,13,3) . ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
         }
 
 
