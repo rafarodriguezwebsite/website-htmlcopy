@@ -55,8 +55,9 @@ h1 {
 }
 
 .main .Event .Location {
+    font-size: 20px;
     text-align: center;
     color: white;
     background-color: black;
-    width: 200px;
+    width: 100px;
 }
