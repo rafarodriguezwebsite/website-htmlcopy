@@ -1,6 +1,5 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-
 /**
  * Returns an authorized API client.
  * @return Google_Client the authorized client object
@@ -13,7 +12,6 @@ function getClient()
     $client->setAuthConfig('credentials.json');
     $client->setAccessType('offline');
     $client->setPrompt('select_account consent');
-
     // Load previously authorized token from a file, if it exists.
     // The file token.json stores the user's access and refresh tokens, and is
     // created automatically when the authorization flow completes for the first
@@ -23,7 +21,6 @@ function getClient()
         $accessToken = json_decode(file_get_contents($tokenPath), true);
         $client->setAccessToken($accessToken);
     }
-
     // If there is no previous token or it's expired.
     if ($client->isAccessTokenExpired()) {
         // Refresh the token if possible, else fetch a new one.
@@ -34,11 +31,9 @@ function getClient()
             $authUrl = $client->createAuthUrl();
             // echo "Open the following link in your browser: ".$authUrl."</br>";
             $authCode = "4/IQG3OYZax2SuXV_e1rpHROp2aMRi9uQKTT4oScNVIhLZJBEIIovu8zM";
-
             // Exchange authorization code for an access token.
             $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
             $client->setAccessToken($accessToken);
-
             // Check to see if there was an error.
             if (array_key_exists('error', $accessToken)) {
                 throw new Exception(join(', ', $accessToken));
@@ -52,12 +47,9 @@ function getClient()
     }
     return $client;
 }
-
-
 // Get the API client and construct the service object.
 $client = getClient();
 $service = new Google_Service_Calendar($client);
-
 // Print the next 10 events on the user's calendar.
 $calendarId = 'primary';
 $optParams = array(
@@ -68,7 +60,6 @@ $optParams = array(
 );
 $results = $service->events->listEvents($calendarId, $optParams);
 $events = $results->getItems();
-
 if (empty($events)) {
     echo "No upcoming events found.</br>";
 } else {
@@ -87,7 +78,6 @@ if (empty($events)) {
         11 => "December",
     );
     foreach ($events as $event) {
-
         if (empty($event->start->dateTime)) {
             $day = intval(substr($event->start->date,8,2));
             $month = $_MONTH[ intval(substr($event->start->date,5,2)) - 1];
@@ -100,9 +90,6 @@ if (empty($events)) {
             $year = substr($event->start->dateTime,0,4);
             $time = ( intval(substr($event->start->dateTime,11,2)) % 12 ) . substr($event->start->dateTime,13,3) . ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
         }
-
-        $picture = "background='http://drive.google.com/uc?export=view&id=".$event->getAttachments()[0]->fileId;
-
         echo "
 <table border='0' class='Event'>
     <tr>
@@ -112,7 +99,7 @@ if (empty($events)) {
             " . $year . "</br></br>
             " . $time . "
         </th>
-        <th colspan='1' class='Picture' " . "background='http://drive.google.com/uc?export=view&id=".$event->getAttachments()[0]->fileId . ">
+        <th colspan='1' class='Picture' background='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
             <h5 class='summary'>" . $event->getSummary() . "</h5></br>
