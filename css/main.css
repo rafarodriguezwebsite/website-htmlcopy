@@ -54,7 +54,7 @@ h1 {
     width: 500px;
 }
 
-.main .Event .Summary h5 {
+.main .Event .Summary .summary {
     color: rgb(10, 10, 10);
     font-weight: bold;
     font-size: 20px;
@@ -71,7 +71,7 @@ h1 {
     width: 100px;
 }
 
-.main .Event .Location h1 {
+.main .Event .Location .day {
     font-weight: bold;
     font-size: 40px;
     margin: 0px;
@@ -79,7 +79,7 @@ h1 {
     text-align: center;
 }
 
-.main .Event .Location h1 {
+.main .Event .Location .month {
     font-weight: bold;
     font-size: 16px;
     margin: 0px;
