@@ -107,7 +107,7 @@ h1 {
     }
     
     .main .Event .Picture {
-        min-width: 150px;
+        min-width: 200px;
     }
     
     .main .Event .Summary {
@@ -131,9 +131,9 @@ h1 {
 }
 @media screen and (max-width: 599px) {
     .main .Event .Date {
-        min-width: 50px;
-        max-width: 50px;
-        width: 50px;
+        min-width: 58px;
+        max-width: 58px;
+        width: 58px;
     }
     
     .main .Event .Date .day {
@@ -162,8 +162,8 @@ h1 {
 
     .main .Event .Location {
         font-size: 10px;
-        min-width: 50px;
-        max-width: 50px;
-        width: 50px;
+        min-width: 58px;
+        max-width: 58px;
+        width: 58px;
     }
 }
