@@ -75,8 +75,9 @@ h1 {
     color: rgb(10, 10, 10);
     font-weight: bold;
     font-size: 20px;
-    margin: 10px;
+    margin: 0px;
     padding: 0px;
+    padding-left: 10px;
     text-align: center;
 }
 
