@@ -106,8 +106,8 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            <h1>" . $day . "</h1></br>
-            <h1>" . $month . "</h1></br>
+            <h5 class='day'>" . $day . "</h5></br>
+            <h5 class='month'>" . $month . "</h5></br>
             " . $year . "</br></br>
             " . $time . "
         </th>
@@ -115,7 +115,7 @@ if (empty($events)) {
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
-            <h5>" . $event->getSummary() . "</h5></br>
+            <h5 class='summary'>" . $event->getSummary() . "</h5></br>
             " . $event->getDescription() . "
         </th>
         <th colspan='1' class='Location'>
