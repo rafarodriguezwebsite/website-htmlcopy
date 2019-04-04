@@ -106,10 +106,10 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            " . $day . "</br>
-            " . $month . "</br>
-            " . $year . "</br>
-            " . $time . "</br>
+            <h6>" . $day . "</h6></br></br>
+            <h7>" . $month . "</h7></br></br>
+            " . $year . "</br></br></br>
+            " . $time . "
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
