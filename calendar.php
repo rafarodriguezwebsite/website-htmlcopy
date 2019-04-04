@@ -103,7 +103,7 @@ if (empty($events)) {
         </th>
         <th colspan='1' class='Summary'>
             <h5 class='summary'>" . $event->getSummary() . "</h5></br>
-            " . $event->getDescription() . "
+            <p2 class='description'>" . $event->getDescription() . "</p2>
         </th>
         <th colspan='1' class='Location'>
             " . $event->getLocation() . "
