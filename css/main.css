@@ -55,9 +55,7 @@ h1 {
     text-align: center;
 }
 
-
-.main .Event .Picture img {
-    position: relative;
+.main .Event .Picture {
     height: 200px;
     width: 200px;
     background-color: rgb(10, 10, 10);
