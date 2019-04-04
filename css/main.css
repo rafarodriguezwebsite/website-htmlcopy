@@ -70,3 +70,19 @@ h1 {
     background-color: rgb(10, 10, 10);
     width: 100px;
 }
+
+.main .Event .Location h6 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.main .Event .Location h7 {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
