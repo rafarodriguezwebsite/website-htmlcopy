@@ -71,7 +71,7 @@ h1 {
     width: 100px;
 }
 
-.main .Event .Location h6 {
+.main .Event .Location h1 {
     font-weight: bold;
     font-size: 40px;
     margin: 0px;
@@ -79,7 +79,7 @@ h1 {
     text-align: center;
 }
 
-.main .Event .Location h7 {
+.main .Event .Location h1 {
     font-weight: bold;
     font-size: 16px;
     margin: 0px;
