@@ -115,7 +115,7 @@ if (empty($events)) {
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
         <th colspan='1' class='Summary'>
-            " . $event->getSummary() . "</br>
+            <h5>" . $event->getSummary() . "</h5></br>
             " . $event->getDescription() . "
         </th>
         <th colspan='1' class='Location'>
