@@ -17,7 +17,7 @@ body {
 }
 
 /* Scroll bar appears on all pages except home */
-/* html {padding-right: calc(100% - 100vw);}  */
+html {padding-right: calc(100% - 100vw);} 
 body {padding-right: calc(100vw - 100%);}
 .page {overflow-y: scroll; overflow-x: hidden;}
 
