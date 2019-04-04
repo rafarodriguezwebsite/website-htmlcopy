@@ -101,9 +101,9 @@ if (empty($events)) {
             $time = ( intval(substr($event->start->dateTime,11,2)) % 12 ) . substr($event->start->dateTime,13,3) . ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
         }
 
-        $picture = $event->getAttachments()[0]->fileId;
-        if (!empty($picture)) {
-            $picture = "background='http://drive.google.com/uc?export=view&id=".$picture;
+        $picture = $event->getAttachments();
+        if ($picture!=NULL) {
+            $picture = "background='http://drive.google.com/uc?export=view&id=".$event->getAttachments()[0]->fileId;
         }
 
         echo "
