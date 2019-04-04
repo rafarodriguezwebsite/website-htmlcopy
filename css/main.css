@@ -54,6 +54,11 @@ h1 {
     width: 500px;
 }
 
+.main .Event .Summary h5 {
+    color: rgb(10, 10, 10);
+    font-size: 20;
+}
+
 .main .Event .Location {
     font-size: 12px;
     text-align: center;
