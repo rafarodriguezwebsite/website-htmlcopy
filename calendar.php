@@ -101,6 +101,10 @@ if (empty($events)) {
             $time = ( intval(substr($event->start->dateTime,11,2)) % 12 ) . substr($event->start->dateTime,13,3) . ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
         }
 
+        $picture = $event->getAttachments()[0]->fileId;
+        if (!empty($picture)) {
+            $picture = "background='http://drive.google.com/uc?export=view&id=".$picture;
+        }
 
         echo "
 <table border='0' class='Event'>
@@ -111,7 +115,7 @@ if (empty($events)) {
             " . $year . "</br></br>
             " . $time . "
         </th>
-        <th colspan='1' class='Picture' background='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
+        <th colspan='1' class='Picture' .$picture.">
         </th>
         <th colspan='1' class='Summary'>
             <h5 class='summary'>" . $event->getSummary() . "</h5></br>
