@@ -31,7 +31,7 @@ h1 {
 .main .Event {
     height: 200px;
     max-height: 200px;
-    padding-left: calc(100vw);
+    padding-left: 17px;
 }
 
 .main .Event .Date {
