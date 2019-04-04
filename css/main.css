@@ -39,6 +39,23 @@ h1 {
     width: 100px;
 }
 
+.main .Event .Date .day {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.main .Event .Date .month {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
 .main .Event .Picture img {
     position: relative;
     height: 200px;
@@ -69,22 +86,4 @@ h1 {
     color: white;
     background-color: rgb(10, 10, 10);
     width: 100px;
-}
-
-.main .Event .Location .day {
-    background-color: purple;
-    font-weight: bold;
-    font-size: 40px;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-
-.main .Event .Location .month {
-    background-color: red;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
 }
