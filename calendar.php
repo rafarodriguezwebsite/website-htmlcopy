@@ -92,12 +92,12 @@ if (empty($events)) {
             $day = intval(substr($event->start->date,8,2));
             $month = $_MONTH[ intval(substr($event->start->date,5,2)) ];
             $year = substr($event->start->date,0,4);
+            $time = "";
         }
         else {
             $day = intval(substr($event->start->dateTime,8,2));
             $month = $_MONTH[ intval(substr($event->start->dateTime,5,2)) - 1];
             $year = substr($event->start->dateTime,0,4);
-            $time = "";
             $time = intval(substr($event->start->dateTime,11,2)) . substr($event->start->dateTime,13,3);
         }
 
@@ -106,10 +106,10 @@ if (empty($events)) {
 <table border='0' class='Event'>
     <tr>
         <th colspan='1' class='Date'>
-            Day: " . $day . "</br>
-            Month: " . $month . "</br>
-            Year: " . $year . "</br>
-            Time: " . $time . "</br>
+            " . $day . "</br>
+            " . $month . "</br>
+            " . $year . "</br>
+            " . $time . "</br>
         </th>
         <th colspan='1' class='Picture'>
             <img src='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>

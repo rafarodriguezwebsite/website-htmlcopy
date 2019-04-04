@@ -27,3 +27,30 @@ h1 {
     text-decoration: none;
     color: rgb(95, 95, 95);
 }
+
+.main .Event .Date {
+    text-align: center;
+    color: white;
+    background-color: rgb(95, 95, 95);
+    width: 100px;
+}
+
+.main .Event .Picture img {
+    height: 100px;
+    width: 100px;
+    background-color: darksalmon;
+}
+
+.main .Event .Summary {
+    text-align: left;
+    color: rgb(95, 95, 95);
+    background-color: white;
+    width: 500px;
+}
+
+.main .Event .Location {
+    text-align: center;
+    color: white;
+    background-color: rgb(95, 95, 95);
+    width: 100px;
+}
