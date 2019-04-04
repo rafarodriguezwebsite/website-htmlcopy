@@ -41,7 +41,7 @@ h1 {
 
 .main .Event .Date .day {
     font-weight: bold;
-    font-size: 40px;
+    /* font-size: 40px; */
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -49,7 +49,7 @@ h1 {
 
 .main .Event .Date .month {
     font-weight: bold;
-    font-size: 16px;
+    /* font-size: 16px; */
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -68,14 +68,14 @@ h1 {
     text-align: left;
     color: rgb(10, 10, 10);
     background-color: rgb(220, 220, 220);
-    padding: 10px;
+    /* padding: 10px; */
     width: 480px;
 }
 
 .main .Event .Summary .summary {
     color: rgb(10, 10, 10);
     font-weight: bold;
-    font-size: 28px;
+    /* font-size: 28px; */
     margin: 0px;
     padding: 0px;
     text-align: center;
@@ -87,4 +87,38 @@ h1 {
     color: white;
     background-color: rgb(10, 10, 10);
     width: 100px;
+}
+
+@media screen and (min-width: 400px) {
+    .main .Event .Date {
+        min-width: 60px;
+    }
+    
+    .main .Event .Date .day {
+        font-size: 40px;
+    }
+    
+    .main .Event .Date .month {
+        font-size: 16px;
+    }
+    
+    .main .Event .Picture {
+        min-width: 200px;
+    }
+    
+    .main .Event .Summary {
+        padding: 10px;
+    }
+    
+    .main .Event .Summary .summary {
+        font-size: 28px;
+    }
+    
+    .main .Event .Location {
+        font-size: 12px;
+        min-width: 60px;
+    }
+}
+@media screen and (max-width: 399px) {
+    h2 {font-size: 60px;}
 }
