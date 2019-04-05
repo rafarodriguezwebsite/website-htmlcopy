@@ -19,10 +19,18 @@
     </div>
 
     <div class="socialMedia">
-        <a href="https://www.youtube.com"><img src="src\icons\youtube-b.png" alt="YouTube"></a>
-        <a href="https://rafaelrodriguez.bandcamp.com/releases"><img src="src\icons\bandcamp-b.png" alt="Bandcamp"></a>
-        <a href="https://www.instagram.com/thatvegankidrar/?hl=en"><img src="src\icons\instagram-b.png" alt="Instagram"></a>
-        <a href="https://soundcloud.com/rafaelrodriguezmusic"><img src="src\icons\soundcloud-b.png" alt="SoundCloud"></a>
+        <a href="https://www.youtube.com">
+            <img src="src\icons\youtube-b.png" alt="YouTube">
+        </a>
+        <a href="https://rafaelrodriguez.bandcamp.com/releases">
+            <img src="src\icons\bandcamp-b.png" alt="Bandcamp">
+        </a>
+        <a href="https://www.instagram.com/thatvegankidrar/?hl=en">
+            <img src="src\icons\instagram-b.png" alt="Instagram">
+        </a>
+        <a href="https://soundcloud.com/rafaelrodriguezmusic">
+            <img src="src\icons\soundcloud-b.png" alt="SoundCloud">
+        </a>
     </div>
 
     <!-- MAIN -->
