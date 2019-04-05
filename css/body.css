@@ -17,8 +17,8 @@ body {
 }
 
 /* Scroll bar appears on all pages except home */
-html {margin-right: calc(100vw - 100%);}
-/* body {margin-right: calc(100vw - 100%);} */
+html {margin-right: calc(100% - 100vw);}
+body {margin-right: calc(100vw - 100%);}
 .page {overflow-y: scroll; overflow-x: hidden;}
 
 h2 {
