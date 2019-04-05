@@ -88,7 +88,9 @@ if (empty($events)) {
             $day = intval(substr($event->start->dateTime,8,2));
             $month = $_MONTH[ intval(substr($event->start->dateTime,5,2)) - 1];
             $year = substr($event->start->dateTime,0,4);
-            $time = ( (12+intval(substr($event->start->dateTime,11,2))) % 12 ) . substr($event->start->dateTime,13,3) . ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
+            $time = ( ( intval(substr($event->start->dateTime,11,2)) % 12 ) == 0 ) ? 12 : ( intval(substr($event->start->dateTime,11,2)) % 12 ) . 
+                substr($event->start->dateTime,13,3) .
+                ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
         }
         echo "
 <table border='0' class='Event'>
