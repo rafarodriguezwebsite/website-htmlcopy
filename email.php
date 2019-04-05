@@ -44,7 +44,7 @@ try {
     $mail->send();
     echo "
 	<script>
-		alert('Message sent. Expect a reply within 24 hours.')
+		alert('Message sent. You will also recieve a copy. Expect a reply within 24 hours.')
 	</script>
 	";
 	
