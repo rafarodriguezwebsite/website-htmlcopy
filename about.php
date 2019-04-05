@@ -39,11 +39,24 @@
             <img src="src\aboutMainB.jpg" style="
                 width:300px;
                 height:225px;
-                padding: 0px 0px 5px 25px;
+                padding: 0px 25px 5px 0px;
                 float: right;
                 ">
             <?php include('BioPt2'); ?>
         </p1>
+
+        <div style="padding: 25px"></div>
+
+        <p1 style="min-height:245px; background-color: lightgrey; padding: 25px 25px 5px;">
+            <img src="src\aboutMainC.jpg" style="
+                width:300px;
+                height:225px;
+                padding: 0px 0px 5px 25px;
+                float: left;
+                ">
+            <?php include('BioPt3'); ?>
+        </p1>
+        
     </div>
 
     
