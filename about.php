@@ -39,7 +39,7 @@
             <img src="src\aboutMainB.jpg" style="
                 width:300px;
                 height:225px;
-                padding: 0px px 5px 25px;
+                padding: 0px 0px 5px 25px;
                 float: right;
                 ">
             <?php include('BioPt2'); ?>
