@@ -25,10 +25,10 @@ try {
 
     //Recipients
     $mail->setFrom('rafarodriguezwebsite@gmail.com', htmlspecialchars($_POST['name']));
-    $mail->addAddress('rafarodriguez2031@gmail.com', 'Rafa Rodriguez');     // Add a recipient
+    // $mail->addAddress('rafarodriguez2031@gmail.com', 'Rafa Rodriguez');     // Add a recipient
     $mail->addReplyTo(htmlspecialchars($_POST['mail']), htmlspecialchars($_POST['name']));
-    // $mail->addCC('cc@example.com');
-    // $mail->addBCC('rafarodriguezwebsite@gmail.com');
+    $mail->addCC(htmlspecialchars($_POST['mail']), htmlspecialchars($_POST['name']));
+    $mail->addBCC('ethan.sifferman@gmail.com', 'Rafa Rodriguez');
 
     // Content
 	$mail->isHTML(true);                                  // Set email format to HTML
