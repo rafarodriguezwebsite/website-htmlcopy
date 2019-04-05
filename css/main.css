@@ -111,7 +111,7 @@ h1 {
     }
     
     .main .Event .Summary {
-        padding: 10px;
+        margin: 10px;
     }
     
     .main .Event .Summary .summary {
@@ -149,7 +149,7 @@ h1 {
     }
     
     .main .Event .Summary {
-        padding: 5px;
+        margin: 5px;
     }
     
     .main .Event .Summary .summary {
