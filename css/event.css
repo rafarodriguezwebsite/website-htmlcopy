@@ -4,30 +4,28 @@
 }
 
 .main .Event .Date {
+    font-weight: bold;
     text-align: center;
     color: white;
     background-color: rgb(10, 10, 10);
+    margin: 0px;
+    padding: 0px;
 }
 
 .main .Event .Date .day {
-    font-weight: bold;
     margin: 0px;
     padding: 0px;
-    text-align: center;
 }
 
 .main .Event .Date .month {
-    font-weight: bold;
+    font-weight: normal;
     margin: 0px;
     padding: 0px;
-    text-align: center;
 }
 
 .main .Event .Date .year-time {
-    font-weight: bold;
     margin: 0px;
     padding: 0px;
-    text-align: center;
 }
 
 .main .Event .Picture {

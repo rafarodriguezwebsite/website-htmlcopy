@@ -95,9 +95,9 @@ if (empty($events)) {
     <tr>
         <th colspan='1' class='Date'>
             <h5 class='day'>" . $day . "</h5></br>
-            <h5 class='month'>" . $month . "</h5></br>
-            <h5 class='year/time'>" . $year . "</h5></br></br>
-            <h5 class='year/time'>" . $time . "</h5>
+            <h5 class='month'>" . $month . "</h5>
+            <h5 class='year-time'>" . $year . "</h5></br>
+            <h5 class='year-time'>" . $time . "</h5>
         </th>
         <th colspan='1' class='Picture' background='http://drive.google.com/uc?export=view&id=" . $event->getAttachments()[0]->fileId."'>
         </th>
