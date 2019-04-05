@@ -1,7 +1,8 @@
 .main .Event {
     height: 200px;
     max-height: 200px;
-    max-width: 100%;
+    position: relative;
+    padding-right: calc(100vw - 100%)
 }
 
 .main .Event .Date {
