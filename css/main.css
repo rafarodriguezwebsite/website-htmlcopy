@@ -116,6 +116,7 @@ h1 {
     
     .main .Event .Summary .summary {
         font-size: 28px;
+        padding-top: 10px;
     }
 
     .main .Event .Summary .description {
@@ -155,6 +156,7 @@ h1 {
     
     .main .Event .Summary .summary {
         font-size: 20px;
+        padding-top: 5px;
     }
 
     .main .Event .Summary .description {
