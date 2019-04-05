@@ -90,7 +90,7 @@ if (empty($events)) {
             $year = substr($event->start->dateTime,0,4);
             $time = (( ( intval(substr($event->start->dateTime,11,2)) % 12 ) == 0 ) ? 12 : ( intval(substr($event->start->dateTime,11,2)) % 12 )) . 
                 substr($event->start->dateTime,13,3) .
-                ( intval(substr($event->start->dateTime,11,2)) <= 12 ? ' AM':' PM' );
+                ( intval(substr($event->start->dateTime,11,2)) < 12 ? ' AM':' PM' );
         }
         echo "
 <table border='0' class='Event'>
