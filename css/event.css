@@ -1,9 +1,7 @@
 .main .Event {
+    position: relative;
     height: 200px;
     max-height: 200px;
-    position: absolute;
-    padding-right: calc(100vw - 100%);
-    position: relative;
 }
 
 .main .Event .Date {
@@ -68,6 +66,11 @@
 }
 
 @media screen and (min-width: 600px) {
+
+    .main .Event {
+        padding-right: 18px;
+    }
+
     .main .Event .Date {
         min-width: 100px;
         max-width: 100px;
@@ -112,6 +115,11 @@
     }
 }
 @media screen and (max-width: 599px) {
+
+    .main .Event {
+        padding: 0px;
+    }
+
     .main .Event .Date {
         min-width: 58px;
         max-width: 58px;
