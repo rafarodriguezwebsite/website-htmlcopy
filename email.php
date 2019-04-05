@@ -27,7 +27,6 @@ try {
     $mail->setFrom('rafarodriguezwebsite@gmail.com', htmlspecialchars($_POST['name']));
     // $mail->addAddress('rafarodriguez2031@gmail.com', 'Rafa Rodriguez');     // Add a recipient
     $mail->addReplyTo(htmlspecialchars($_POST['mail']), htmlspecialchars($_POST['name']));
-    $mail-?addReplyTo('rafarodriguezwebsite@gmail.com');
     $mail->addCC(htmlspecialchars($_POST['mail']), htmlspecialchars($_POST['name']));
     $mail->addBCC('rafarodriguez2031@gmail.com', 'Rafa Rodriguez');
 
