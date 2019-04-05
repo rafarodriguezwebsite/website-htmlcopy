@@ -19,7 +19,7 @@
     </div>
 
     <!-- MAIN -->
-    <div class="main">
+    <div class="main" style="max-width: 800px;">
         <h1>
             Message Me
         </h1>
