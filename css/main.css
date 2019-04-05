@@ -120,6 +120,7 @@ h1 {
 
     .main .Event .Summary .description {
         font-size: 15px;
+        margin: 10px;
     }
     
     .main .Event .Location {
@@ -158,6 +159,7 @@ h1 {
 
     .main .Event .Summary .description {
         font-size: 12px;
+        margin: 5px;
     }
 
     .main .Event .Location {
