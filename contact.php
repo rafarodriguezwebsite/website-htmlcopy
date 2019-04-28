@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- HI -->
+
 <html class="page">
 <?php include('Meta&Head.html'); ?>
 <title>Contact | Rafael</title>
